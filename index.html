@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>文兴资讯-您身边的资讯秘书</title>
+        <META name="keywords" content="家日记,家庭日记,家庭,私密日记"/>
+    
+     
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+        <style type="text/css">
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+            .form-horizontal .control-label {
+                text-align: inherit;
+                width: 60px;
+            }
+            .form-horizontal .controls {
+                margin-left:0;
+            }
+            input{
+                width: 90%;
+            }
+        </style>
+        <SCRIPT LANGUAGE="JavaScript">
+
+
+            function toWeiboLogin()
+            {
+                childWindow = window.open("/user_control-weibo_connect.html", "WeiboLogin", "width=605,height=413,menubar=0,scrollbars=0, resizable=1,status=0,titlebar=0,toolbar=0,location=0");
+            }
+
+        </SCRIPT>
+    </head>
+    <body>
+        <!--navbar-->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand" href="#">文兴资讯</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li><a title="首页"  href="index.html">首页</a></li>
+                            <li><a title="订阅" href="order.html">订阅</a></li>
+                            <!--  <li><a title="加入收藏" onClick="AddFavorite(window.location, document.title)" href="#">分类</a></li>-->
+                            <li><a title="下载到桌面" href="/family_control-download_to_desktop.html" target="_blank">客户端</a></li>
+                        </ul>
+                        <form class="navbar-search pull-right">
+                            <input type="text" class="search-query" placeholder="Search">
+                        </form>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+        <!--navbar End-->
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span3">
+
+                    <!--login form-->
+                    <div class="well sidebar-nav" style="padding-bottom:5px">
+                        <form class="form-horizontal" action="/user_control-login_check.html" method="post">
+                            <div class="control-group">
+                                <label class="control-label" for="inputEmail">用户名</label>
+                                <div class="controls">
+                                    <input type="text" id="inputEmail" placeholder="Email/ID/手机号" name="username"/>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="inputPassword">密码</label>
+                                <div class="controls">
+                                    <input type="password" id="inputPassword" name="password">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="controls">
+                                    <label class="checkbox" style="margin-bottom:10px">
+                                        <input type="checkbox" name="save_cookie">下次自动登录
+                                    </label>
+                                    <a href="#myModal" data-toggle="modal" class="btn btn-success" style='width:65px; margin-left:10px'>立即注册</a>
+                                    <button type="submit" class="btn pull-right" style="margin-right:15px; width:90px">登录</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="myModal" class="modal hide fade" style="display: none;">
+                        <div class="modal-header">
+                            <a class="close" data-dismiss="modal">×</a>
+                            <h3 style="font-size:18px">用户注册</h3>
+                        </div>
+                        <div class="modal-body" style="margin:0 auto">
+                            <form class="form-horizontal" style="width:300px" action="/user_control-login_check.html" method="post">
+                                <div class="control-group">
+                                    <label class="control-label" for="inputEmail">用户名</label>
+                                    <div class="controls">
+                                        <input type="text" id="inputEmail" placeholder="Email/ID/手机号" name="username"/>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="inputEmail">邮箱</label>
+                                    <div class="controls">
+                                        <input type="text" id="inputEmail"  name="username"/>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="inputPassword">密码</label>
+                                    <div class="controls">
+                                        <input type="password" id="inputPassword" name="password">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="inputPassword">确认密码</label>
+                                    <div class="controls">
+                                        <input type="password" id="inputPassword" name="password">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="controls">
+
+                                        <a href="#myModal" class="btn   btn-success" style='width:65px; margin-left:10px'>立即注册</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+                    <!--/.well -->
+                    <!--login form End-->
+                    <div class="well">
+                        <div class="name" style="margin-bottom:10px">使用其他帐号登录:</div>
+                        <div style="text-align:center"><a href="#" onclick="toWeiboLogin()"><img src="http://qzonestyle.gtimg.cn/qzone/vas/opensns/res/img/Connect_logo_4.png"></a></div>
+                        <br/>
+                        <div style="text-align:center"><a href="#" onclick="toWeiboLogin()"><img src="http://www.sinaimg.cn/blog/developer/wiki/32.png"></a></div>
+
+                        <div class="name" style="margin-top:20px; margin-bottom:10px">扫一扫：微信</div>
+                        <div style="text-align:center"><img style="width:120px; height:120px" src="img/getqrcode2.jpg"></div>    
+                    </div>
+                </div>
+                <!--/span-->
+                <div class="span9">
+                    <div class="row-fluid">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#">国学</a>
+                            </li>
+                            <li><a href="#">军事</a></li>
+                            <li><a href="#">历史</a></li>
+                            <li><a href="#">社会</a></li>
+                            <li><a href="#">哲学</a></li>
+                            <li><a href="#">中医</a></li>
+                        </ul>
+                        <ul class="thumbnails" style="padding-top:5px;">
+                            <li class="span2">
+                                <div class="thumbnail">
+                                    <img alt="100x100" data-src="holder.js/100x100" style="width:164x;height: 130px;" src="upload/1.jpg">
+                                    <div class="caption">
+                                        <strong style="color:#825d5b"><a href="article.html">天学者</a></strong>
+                                        <p style="color:#afafaf;font-size: 12px">晓英视<br>
+                                            <span style="color:red;font-size: 12px">更新至22章</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span2">
+                                <div class="thumbnail">
+                                    <img alt="100x100" data-src="holder.js/100x100" style="width:164x;height: 130px;" src="upload/6.jpg">
+                                    <div class="caption">
+                                        <strong style="color:#825d5b">天学者</strong>
+                                        <p style="color:#afafaf;font-size: 12px">晓英视<br>
+                                            <span style="color:red;font-size: 12px">更新至22章</span></p>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span2">
+                                <div class="thumbnail">
+                                    <img alt="100x100" data-src="holder.js/100x100" style="width:164x;height: 130px;" src="upload/2.jpg">
+                                    <div class="caption">
+                                        <strong style="color:#825d5b">天学者</strong>
+                                        <p style="color:#afafaf;font-size: 12px">晓英视<br>
+                                            <span style="color:red;font-size: 12px">更新至22章</span></p>
+
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span2">
+                                <div class="thumbnail">
+                                    <img alt="100x100" data-src="holder.js/100x100" style="width:164x;height: 130px;" src="upload/3.jpg">
+                                    <div class="caption">
+                                        <strong style="color:#825d5b">天学者</strong>
+                                        <p style="color:#afafaf;font-size: 12px">晓英视<br>
+                                            <span style="color:red;font-size: 12px">更新至22章</span></p>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span2">
+                                <div class="thumbnail">
+                                    <img alt="100x100" data-src="holder.js/100x100" style="width:164x;height: 130px;" src="upload/4.jpg">
+                                    <div class="caption">
+                                        <strong style="color:#825d5b">天学者</strong>
+                                        <p style="color:#afafaf;font-size: 12px">晓英视<br>
+                                            <span style="color:red;font-size: 12px">更新至22章</span></p>
+
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span2">
+                                <div class="thumbnail">
+                                    <img alt="100x100" data-src="holder.js/100x100" style="width:164x;height: 130px;" src="upload/5.jpg">
+                                    <div class="caption">
+                                        <strong style="color:#825d5b">天学者</strong>
+                                        <p style="color:#afafaf;font-size: 12px">晓英视<br>
+                                            <span style="color:red;font-size: 12px">更新至22章</span></p>
+
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span2" style="margin-left:0">
+                                <div class="thumbnail">
+                                    <img alt="100x100" data-src="holder.js/100x100" style="width:164x;height: 130px;" src="upload/3.jpg">
+                                    <div class="caption">
+                                        <strong style="color:#825d5b">天学者</strong>
+                                        <p style="color:#afafaf;font-size: 12px">晓英视<br>
+                                            <span style="color:red;font-size: 12px">更新至22章</span></p>
+
+
+                                    </div>
+                                </div>
+                            </li>    <li class="span2">
+                                <div class="thumbnail">
+                                    <img alt="100x100" data-src="holder.js/100x100" style="width:164x;height: 130px;" src="upload/4.jpg">
+                                    <div class="caption">
+
+                                        <strong style="color:#825d5b">天学者</strong>
+                                        <p style="color:#afafaf;font-size: 12px">晓英视<br>
+                                            <span style="color:red;font-size: 12px">更新至22章</span></p>
+
+
+                                    </div>
+                                </div>
+                            </li>    <li class="span2">
+                                <div class="thumbnail">
+                                    <img alt="100x100" data-src="holder.js/100x100" style="width:164x;height: 130px;" src="upload/6.jpg">
+                                    <div class="caption">
+                                        <strong style="color:#825d5b">天学者</strong>
+                                        <p style="color:#afafaf;font-size: 12px">晓英视<br>
+                                            <span style="color:red;font-size: 12px">更新至22章</span></p>
+
+
+                                    </div>
+                                </div>
+                            </li>    <li class="span2">
+                                <div class="thumbnail">
+                                    <img alt="100x100" data-src="holder.js/100x100" style="width:164x;height: 130px;" src="upload/5.jpg">
+                                    <div class="caption">
+                                        <strong style="color:#825d5b">天学者</strong>
+                                        <p style="color:#afafaf;font-size: 12px">晓英视<br>
+                                            <span style="color:red;font-size: 12px">更新至22章</span></p>
+
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                        <div class="hd lined" style=" border-bottom: solid 1px #dddddd;"><h3 style="font-size:18px;padding: 2px;line-height: 0;">人物推荐</h3></div>
+                        <ul class="thumbnails" style="padding-top:5px;">
+                            <li class="span2">
+                                <div class="thumbnail">
+                                    <img alt="100x100" data-src="holder.js/100x100" style="width:164x;height: 130px;" src="upload/6.jpg">
+                                    <div class="caption">
+                                        <span>天学者1</span>
+
+                                        <p><a  class="btn btn-info" href="#">作品</a><a class="btn  pull-right" href="#">关注</a> 
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span2">
+                                <div class="thumbnail">
+                                    <img alt="100x100" data-src="holder.js/100x100" style="width:164x;height: 130px;" src="upload/7.jpg">
+                                    <div class="caption">
+                                        <span>王旭明</span>
+
+                                        <p><a  class="btn btn-info" href="#">作品</a> <a class="btn" href="#">关注</a> 
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span2">
+                                <div class="thumbnail">
+                                    <img alt="100x100" data-src="holder.js/100x100" style="width:164x;height: 130px;" src="upload/8.jpg">
+                                    <div class="caption">
+                                        <span>金骏眉廿八号林白</span>
+
+                                        <p><a  class="btn btn-info" href="#">作品</a> <a class="btn" href="#">关注</a> 
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span2">
+                                <div class="thumbnail">
+                                    <img alt="100x100" data-src="holder.js/100x100" style="width:164x;height: 130px;" src="upload/9.jpg">
+                                    <div class="caption">
+                                        <span>晓英视线</span>
+
+                                        <p><a  class="btn btn-info" href="#">作品</a> <a class="btn " href="#">关注</a> 
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span2">
+                                <div class="thumbnail">
+                                    <img alt="100x100" data-src="holder.js/100x100" style="width:164x;height: 130px;" src="upload/10.jpg">
+                                    <div class="caption">
+                                        <span>嘉汇汉唐书</span>
+
+                                        <p><a  class="btn btn-info" href="#">作品</a> <a class="btn" href="#">关注</a> 
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span2">
+                                <div class="thumbnail">
+                                    <img alt="100x100" data-src="holder.js/100x100" style="width:164x;height: 130px;" src="upload/11.jpg">
+                                    <div class="caption">
+                                        <span>行者书院</span>
+
+                                        <p><a  class="btn btn-info" href="#">作品</a> <a class="btn" href="#">关注</a> 
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+                        </ul>
+                    </div>
+
+                    <!--/row-->
+                    <!--
+                    <div class="row-fluid">
+                      <div class="span4">
+                          <h2>微信发布</h2>
+                            <p>微信关注“家日记”公共帐号，即可通过微信查看，更新家日记，随时随地和家人分享生活瞬间. </p>
+                            <p><a class="btn" href="#">查看二维码 &raquo;</a></p>
+                          </div>
+                          <div class="span4">
+                            <h2>Heading</h2>
+                            <p>家日记是和家人分享生活点滴的地方。这里你可以写每天的心情,发生的故事,上传你近期的照片,让远方的父母亲人了解你的近况。并且,这是完全私密的,家庭以外的成员将不会看到日记的内容. </p>
+                            <p><a class="btn" href="#">View details &raquo;</a></p>
+              
+                          </div>
+                          <div class="span4">
+                            <h2>Heading</h2>
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                            <p><a class="btn" href="#">View details &raquo;</a></p>
+                          </div>
+                        </div>
+                    -->
+                </div>
+            </div>
+
+            <hr>
+        </div><!--/.fluid-container-->
+        <footer><p align="center">Copyright &copy; 2012-2013&nbsp;&nbsp;文兴资讯
+
+            </p></footer>
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,179 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>文兴资讯-您身边的资讯秘书</title>
+        <META name="keywords" content=""/>
+        <META name="description" content="">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+        <style type="text/css">
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+            .form-horizontal .control-label {
+                text-align: inherit;
+                width: 60px;
+            }
+            .form-horizontal .controls {
+                margin-left:0;
+            }
+            input{
+                width: 90%;
+            }
+        </style>
+        <SCRIPT LANGUAGE="JavaScript">
+
+
+            function toWeiboLogin()
+            {
+                childWindow = window.open("/user_control-weibo_connect.html", "WeiboLogin", "width=605,height=413,menubar=0,scrollbars=0, resizable=1,status=0,titlebar=0,toolbar=0,location=0");
+            }
+
+        </SCRIPT>
+    </head>
+    <body>
+        <!--navbar-->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand" href="#">文兴资讯</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li><a title="设为首页" onClick="SetHome(this, window.location)" href="#">首页</a></li>
+                            <li><a title="设为首页" onClick="SetHome(this, window.location)" href="#">订阅中心</a></li>
+                            <li><a title="加入收藏" onClick="AddFavorite(window.location, document.title)" href="#">分类</a></li>
+                            <li><a title="下载到桌面" href="/family_control-download_to_desktop.html" target="_blank">客户端</a></li>
+                        </ul>
+                        <form class="navbar-search pull-right">
+                            <input type="text" class="search-query" placeholder="Search">
+                        </form>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+        <!--navbar End-->
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span3">
+
+                    <!--login form-->
+                    <div class="well sidebar-nav" style="padding-bottom:5px">
+                        <form class="form-horizontal" action="/user_control-login_check.html" method="post">
+                            <div class="control-group">
+                                <label class="control-label" for="inputEmail">用户名</label>
+                                <div class="controls">
+                                    <input type="text" id="inputEmail" placeholder="Email/ID/手机号" name="username"/>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="inputPassword">密码</label>
+                                <div class="controls">
+                                    <input type="password" id="inputPassword" name="password">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="controls">
+                                    <label class="checkbox" style="margin-bottom:10px">
+                                        <input type="checkbox" name="save_cookie">下次自动登录
+                                    </label>
+                                    <a href="/register.html" class="btn btn-success" style='width:65px; margin-left:10px'>立即注册</a>
+                                    <button type="submit" class="btn pull-right" style="margin-right:15px; width:90px">登录</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!--/.well -->
+                    <!--login form End-->
+                    <div class="well">
+                        <div class="name" style="margin-bottom:10px">使用其他帐号登录:</div>
+                        <div style="text-align:center"><a href="#" onclick="toWeiboLogin()"><img src="http://qzonestyle.gtimg.cn/qzone/vas/opensns/res/img/Connect_logo_4.png"></a></div>
+                        <br/>
+                        <div style="text-align:center"><a href="#" onclick="toWeiboLogin()"><img src="http://www.sinaimg.cn/blog/developer/wiki/32.png"></a></div>
+
+                        <div class="name" style="margin-top:20px; margin-bottom:10px">扫一扫：微信</div>
+                        <div style="text-align:center"><img style="width:120px; height:120px" src="img/getqrcode2.jpg"></div>    
+                    </div>
+                </div>
+                <!--/span-->
+                <div class="span9">
+                    <div class="well modal-example" style="background-color: #888; border: none;">
+                        <div class="modal" style="position: relative; top: auto; left: auto; margin: 0 auto; z-index: 1">
+                            <div class="modal-header">
+                                <a href="#" class="close" data-dismiss="modal">×</a>
+                                <h3>对话框标题</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p>天朝，你好....</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#" class="btn">关闭</a>
+                                <a href="#" class="btn btn-primary">保存更改</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="myModal" class="modal hide fade" style="display: none;">
+                        <div class="modal-header">
+                            <a class="close" data-dismiss="modal">×</a>
+                            <h3 style="font-size:18px">用户注册</h3>
+                        </div>
+                        <div class="modal-body" style="margin:0 auto">
+                            <form class="form-horizontal" style="width:300px" action="/user_control-login_check.html" method="post">
+                                <div class="control-group">
+                                    <label class="control-label" for="inputEmail">用户名</label>
+                                    <div class="controls">
+                                        <input type="text" id="inputEmail" placeholder="Email/ID/手机号" name="username"/>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="inputEmail">邮箱</label>
+                                    <div class="controls">
+                                        <input type="text" id="inputEmail"  name="username"/>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="inputPassword">密码</label>
+                                    <div class="controls">
+                                        <input type="password" id="inputPassword" name="password">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="inputPassword">确认密码</label>
+                                    <div class="controls">
+                                        <input type="password" id="inputPassword" name="password">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="controls">
+
+                                        <a href="/register.html" class="btn   btn-success" style='width:65px; margin-left:10px'>立即注册</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+                    <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">点击演示</a>
+
+                </div>
+
+
+                <footer><p align="center">Copyright &copy; 2012-2013&nbsp;&nbsp;文兴资讯
+
+                    </p></footer>
+                <script src="js/jquery-1.10.2.min.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+
+                </body>
+                </html>
+
