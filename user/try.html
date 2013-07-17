@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>文兴资讯-您身边的资讯秘书</title>
+        <META name="keywords" content="家日记,家庭日记,家庭,私密日记"/>
+        <META name="description" content="家日记是和家人分享生活点滴的地方。这里你可以写每天的心情，发生的故事，上传你近期的照片，让远方的父母亲人了解你的近况。并且，这是完全私密的，家庭以外的成员将不会看到日记的内容。">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-responsive.min.css">
+
+        <script src="../js/bootstrap.min.js"></script>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript">
+            $(function() {
+
+               $("#myTab a").mouseover(function(e) {
+
+                e.preventDefault();
+                // $(this).tab('show');
+                $(this).tab("show");
+                 });
+            }
+            );
+        </script>
+    </head>
+    <body>
+
+        <!-- <input type="button" id="bu">-->
+
+        <ul class="nav nav-tabs" id="myTab" >
+            <li ><a href="#home" data-toggle="tab">first page</a></li>
+            <li class="active"><a href="#profile" data-toggle="tab">profile</a></li>
+            <li><a href="#messages" data-toggle="tab">messages</a></li>
+            <li><a href="#settings" data-toggle="tab">settings</a></li>
+        </ul>
+
+
+
+        <div class="tab-content">
+            <div class="tab-pane active" id="home">this is my home</div>
+            <div class="tab-pane" id="profile">222222222222</div>
+            <div class="tab-pane" id="messages">333333333333</div>
+            <div class="tab-pane" id="settings">44444444444444</div>
+        </div>
+      
+    </body>
+
+
+</html>

@@ -1,11 +1,11 @@
-
+﻿
 <!DOCTYPE html>
 <html lang="zh">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <title>文兴资讯-您身边的资讯秘书</title>
-        <META name="keywords" content="家日记,家庭日记,家庭,私密日记"/>
-        <META name="description" content="家日记是和家人分享生活点滴的地方。这里你可以写每天的心情，发生的故事，上传你近期的照片，让远方的父母亲人了解你的近况。并且，这是完全私密的，家庭以外的成员将不会看到日记的内容。">
+        <META name="keywords" content="发表作品"/>
+        <META name="description" content="汇达是一个为大家服务的信息聚合网">
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../css/bootstrap-responsive.min.css">
         <script src="../js/jquery-1.9.1.min.js"></script>
@@ -24,6 +24,10 @@
             }
             input{
                 width: 90%;
+            }
+            .charac{
+                color:#000;
+                font-size:14px;
             }
         </style>
 
@@ -67,11 +71,11 @@
 
                         </div>
                         <ul class="nav nav-tabs nav-stacked">
-                            <li class="active"><a href="index.html"><i class="icon-th-list"></i> 作品</a></li>
-                               <li class=""><a href="subscribe.html"><i class="icon-star"></i> 订阅</a></li>
-                         <li class=""><a href="myfocus.html"><i class="icon-bookmark"></i> 关注</a></li>
-                            <li><a href="#"><i class="icon-envelope"> </i> 私信</a></li>
-                                  <li><a href="personcenter.html"><i class="icon-user"> </i> 关于我</a></li>
+                            <li class="active"><a href="post.html"><i class="icon-th-list"></i> 作 品</a></li>
+                            <li class=""><a href="subscribe.html"><i class="icon-star"></i> 订阅</a></li>
+                            <li class=""><a href="myfocus.html"><i class="icon-bookmark"></i> 关 注</a></li>
+                            <li><a href="email.html"><i class="icon-envelope"> </i> 私 信</a></li>
+                            <li><a href="personcenter.html"><i class="icon-user"> </i> 个人中心</a></li>
                         </ul>
 
                     </div>
@@ -83,40 +87,66 @@
                 <div class="span9">
                     <div class="row-fluid">
                         <div class="page-header">
-                            <h5> 我的作品</h5>
+                            <h5 style="display:inline;margin-left:450px">发布作品</h5>
                         </div>
 
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th>序号</th>
-                                    <th>作品</th>
-                                    <th>发布时间</th>
-                                    <th>点击</th>
-                                </tr>
-                            </thead>
+                        <table align="center" style="margin-top:50px;margin-left:150px" width="500px" cellspacing=0 cellpadding=0>
                             <tbody>
                                 <tr>
-                                    <td>1</td>
-                                    <td>天学者</td>
-                                    <td>2013-06025</td>
-                                    <td>1000</td>
-                                </tr>
-
-                                <tr>
-                                    <td>1</td>
-                                    <td>天学者(第二部)</td>
-                                    <td>2013-06025</td>
-                                    <td>1000</td>
+                                    <td>
+                                        <span class="charac">作品名字:</span>
+                                    </td>
+                                    <td><input type="text" style="width:200px;height:16px">
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
-                                    <td>天学者（第三部）</td>
-                                    <td>2013-06025</td>
-                                    <td>1000</td>
+                                    <td>
+                                        <span class="charac">作品简介:</span>
+                                    </td>
+                                    <td>
+                                        <input type="text"style="width:200px;height:16px">
+                                    </td>
                                 </tr>
+                                <tr>
+                                    <td>
+                                        <span class="charac">作品作者:</span>
+                                    </td>
+                                    <td>
+                                        <input type="text" style="width:200px;height:16px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="charac">作品标题:</span>
+                                    </td>
+                                    <td>
+                                        <input type="text" style="width:200px;height:16px">
+                                    </td>
+                                </tr>
+                            <td>
+                                <span class="charac">作品图片:</span>
+                            </td>
+                            <td>
+                                <input type="text" style="width:200px;height:16px">
+                            </td>
+                            <td>
+                            <tr>
+                                <td>
+                                    <span class="charac">内容：</span>
+                                </td>
+                                <td><textarea cols="45" rows="7"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                            </tr>
+                            <tr>
+                                <td colspan=2>
+                                    <span style="margin-left:100px"><a class="btn" href="#">确认发布</a></span>
+                                </td>
+                            </tr>
                             </tbody>
                         </table>
+
 
                     </div>
                 </div>

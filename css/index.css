@@ -1,0 +1,66 @@
+ body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+            .form-horizontal .control-label {
+                text-align: inherit;
+                width: 60px;
+            }
+            .form-horizontal .controls {
+                margin-left:0;
+            }
+            input{
+                width: 90%;
+            }
+	    .nob{
+		border:0px;
+ 		height:200px;
+	    }
+		li{
+		list-style-type:none;
+		list-style-position£ºoutside;
+		list-style-image:none;
+		}
+             img{
+		position:relative;
+		border-top-color:currentColor;
+		border-right-color:currentColor;
+		border-left-color:currentColor;
+		border-bottom-color:currentColor;
+		border-right-width:medium;
+		border-bottom-width:medium;
+		border-left-width:medium;
+		border-top-style:none;
+		border-right-style:none;
+		border-bottom-style:none;
+		border-left-style:none;
+		position:relative;
+		border-top-left-radius:2px;
+		border-top-right-radius:2px;
+		border-bottom-right-radius:2px;
+		border-bottom-left-radius:2px;
+	  }
+	 .wh{
+           width:100px;
+	   height:162px;
+	}
+	 .whs{
+           width:110px;
+	   height:162px;
+	}
+         .matop{
+
+           margin-left:0px;
+	   margin-top:35px;
+	}
+	.aa{
+	 color:#259£»
+	}
+	.charac{
+ 	 color:#000;
+	 font-size:14px;
+	}
+	.ctop{
+	
+	 margin-top:5px;
+	}

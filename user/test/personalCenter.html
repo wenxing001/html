@@ -1,4 +1,4 @@
-
+﻿
 <!DOCTYPE html>
 <html lang="zh">
     <head>
@@ -10,6 +10,7 @@
         <link rel="stylesheet" type="text/css" href="../css/bootstrap-responsive.min.css">
         <script src="../js/jquery-1.9.1.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
         <style type="text/css">
             body {
                 padding-top: 60px;
@@ -25,6 +26,21 @@
             input{
                 width: 90%;
             }
+	    li{
+		float:left;
+		margin-left:40px;
+	    }
+	   .imgleft{
+	   margin-left:10px;
+	}
+	 .wh{
+           width:100px;
+	   height:162px;
+	}
+	a{
+	 text-decoration:none;
+	}
+        </style>
         </style>
 
     </head>
@@ -37,7 +53,7 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li><a title="首页"  href="index.html">首页</a></li>
-                            <li><a title="订阅" href="order.html">订阅</a></li>
+                            <li><a title="订阅" href="order.html">我的订阅</a></li>
                             <!--  <li><a title="加入收藏" onClick="AddFavorite(window.location, document.title)" href="#">分类</a></li>-->
                             <li><a title="下载到桌面" href="/family_control-download_to_desktop.html" target="_blank">客户端</a></li>
                         </ul>
@@ -62,16 +78,16 @@
                             <div class="caption">
                                 <strong style="color:#825d5b">天学者</strong>
                                 <p style="color:#afafaf;font-size: 12px">晓英视<br>
-                                    <span style="color:red;font-size: 12px">更新至22章</span></p>
+                                 <span style="color:red;font-size: 12px">更新至22章</span></p>
                             </div>
 
                         </div>
                         <ul class="nav nav-tabs nav-stacked">
-                            <li class="active"><a href="index.html"><i class="icon-th-list"></i> 作品</a></li>
-                               <li class=""><a href="subscribe.html"><i class="icon-star"></i> 订阅</a></li>
-                         <li class=""><a href="myfocus.html"><i class="icon-bookmark"></i> 关注</a></li>
+                            <li class="active"><a href="#"><i class="icon-th-list"></i> 作品</a></li>
+                               <li class=""><a href="#"><i class="icon-star"></i>订阅</a></li>
+                         <li class=""><a href="#"><i class="icon-bookmark"></i> 关注</a></li>
                             <li><a href="#"><i class="icon-envelope"> </i> 私信</a></li>
-                                  <li><a href="personcenter.html"><i class="icon-user"> </i> 关于我</a></li>
+                                  <li><a href="#"><i class="icon-user"> </i> 关于我</a></li>
                         </ul>
 
                     </div>
@@ -83,41 +99,34 @@
                 <div class="span9">
                     <div class="row-fluid">
                         <div class="page-header">
-                            <h5> 我的作品</h5>
+                            <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#">基本资料</a>
+                            </li>
+                            <li><a href="#">扩展资料</a></li>
+			    <li><a href="#">修改用户名</a></li> 
+                            <li><a href="#">修改密码</a></li>
+                          
+                        </ul>
+
+
                         </div>
+			
+			   <div style="margin-left:200px;margin-top:120px">
+			        <form action="method">
+				 <table>
+				   <tr><td>会员昵称:</td><td>小林</td></tr>
+				   <tr><td>会员密码:</td><td>xiaolin</td></tr>
+				   <tr><td>会员图像:</td><td><input type="text"></td></tr>
+				</table>
+				</form>	
+			
+			  </div>
+			
 
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th>序号</th>
-                                    <th>作品</th>
-                                    <th>发布时间</th>
-                                    <th>点击</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>天学者</td>
-                                    <td>2013-06025</td>
-                                    <td>1000</td>
-                                </tr>
 
-                                <tr>
-                                    <td>1</td>
-                                    <td>天学者(第二部)</td>
-                                    <td>2013-06025</td>
-                                    <td>1000</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>天学者（第三部）</td>
-                                    <td>2013-06025</td>
-                                    <td>1000</td>
-                                </tr>
-                            </tbody>
-                        </table>
 
+                      
                     </div>
                 </div>
 

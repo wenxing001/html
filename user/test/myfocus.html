@@ -4,13 +4,13 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <title>文兴资讯-您身边的资讯秘书</title>
-        <META name="keywords" content="发表作品"/>
-        <META name="description" content="汇达是一个为大家服务的信息聚合网">
+        <META name="keywords" content="家日记,家庭日记,家庭,私密日记"/>
+        <META name="description" content="家日记是和家人分享生活点滴的地方。这里你可以写每天的心情，发生的故事，上传你近期的照片，让远方的父母亲人了解你的近况。并且，这是完全私密的，家庭以外的成员将不会看到日记的内容。">
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../css/bootstrap-responsive.min.css">
         <script src="../js/jquery-1.9.1.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="../css/index.css">
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
         <style type="text/css">
             body {
                 padding-top: 60px;
@@ -26,6 +26,21 @@
             input{
                 width: 90%;
             }
+	    li{
+		float:left;
+		margin-left:40px;
+	    }
+	   .imgleft{
+	   margin-left:10px;
+	}
+	 .wh{
+           width:100px;
+	   height:162px;
+	}
+	a{
+	 text-decoration:none;
+	}
+        </style>
         </style>
 
     </head>
@@ -38,7 +53,7 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li><a title="首页"  href="index.html">首页</a></li>
-                            <li><a title="订阅" href="order.html">订阅</a></li>
+                            <li><a title="订阅" href="order.html">我的订阅</a></li>
                             <!--  <li><a title="加入收藏" onClick="AddFavorite(window.location, document.title)" href="#">分类</a></li>-->
                             <li><a title="下载到桌面" href="/family_control-download_to_desktop.html" target="_blank">客户端</a></li>
                         </ul>
@@ -68,11 +83,11 @@
 
                         </div>
                         <ul class="nav nav-tabs nav-stacked">
-                            <li class="active"><a href="post.html"><i class="icon-th-list"></i> 作品</a></li>
-                               <li class=""><a href="subscribe.html"><i class="icon-star"></i> 订阅</a></li>
-                         <li class=""><a href="myfocus.html"><i class="icon-bookmark"></i> 关注</a></li>
-                            <li><a href="email.html"><i class="icon-envelope"> </i> 私信</a></li>
-                                  <li><a href="personcenter.html"><i class="icon-user"> </i> 个人中心</a></li>
+                            <li class="active"><a href="#"><i class="icon-th-list"></i> 作品</a></li>
+                               <li class=""><a href="#"><i class="icon-star"></i>订阅</a></li>
+                         <li class=""><a href="#"><i class="icon-bookmark"></i> 关注</a></li>
+                            <li><a href="#"><i class="icon-envelope"> </i> 私信</a></li>
+                                  <li><a href="#"><i class="icon-user"> </i> 关于我</a></li>
                         </ul>
 
                     </div>
@@ -81,17 +96,14 @@
 
                 </div>
                 <!--/span-->
-           
-     <div class="span9">
+                <div class="span9">
                     <div class="row-fluid">
                         <div class="page-header">
-                            <h5>订阅</h5>
+                            <h5> 我的关注</h5>
                         </div>
-
-
-
-                        
-<ul class="thumbnails" style="padding-top:5px;">
+			
+			
+			  <ul class="thumbnails" style="padding-top:5px;">
                             <li class="span2">
                                 <div class="nob" class="thumbnail">
                                     <a class="aa"><img alt="100x100" data-src="holder.js/100x100" class="wh" src="../upload/1.jpg"></a>
@@ -160,7 +172,7 @@
                                     </div>
                                 </div>
                             </li>                         
-				 <li class="span2" style="margin-left:0;margin-top:35px">
+				 <li class="span2" style="margin-left:0;">
                                 <div class="nob"  class="thumbnail">
                                     <img alt="100x100" data-src="holder.js/100x100" class="wh" src="../upload/3.jpg">
                                     <div class="caption ctop">
@@ -171,7 +183,8 @@
 
                                     </div>
                                 </div>
-                            </li>    <li class="span2">
+                            </li>   
+		 	   <li class="span2">
                                 <div class="matop" class="nob" class="thumbnail">
                                     <img alt="100x100" data-src="holder.js/100x100" class="wh" src="../upload/4.jpg">
                                     <div class="caption ctop">
@@ -213,15 +226,9 @@
 
 
 
-
-
-
+                      
+                    </div>
                 </div>
-
-
-
-
-
 
 
             </div>

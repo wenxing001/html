@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>文兴资讯-您身边的资讯秘书</title>
+        <META name="keywords" content="发表作品"/>
+        <META name="description" content="汇达是一个为大家服务的信息聚合网">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-responsive.min.css">
+        <script src="../js/jquery-1.9.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/jquery-1.3.2.min.js"></script>
+        <style type="text/css">
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+            .form-horizontal .control-label {
+                text-align: inherit;
+                width: 60px;
+            }
+            .form-horizontal .controls {
+                margin-left:0;
+            }
+            input{
+                width: 90%;
+            }
+            .xuan{
+                display:none;	
+            }
+
+        </style>
+        <script type="text/javascript" language="javascript">
+            $(function() {
+                var $div_li = $("div.tab_menu ul li");
+                $div_li.click(function() {
+                    $(this).addClass("active").siblings().removeClass("active");
+                    var index = $div_li.index(this);
+                    $("div.tab_box > div").eq(index).show().siblings().hide();
+                });
+
+            });
+        </script>
+    </head>
+    <body>
+        <!--navbar-->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand" href="#">文兴资讯</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li><a title="首页"  href="post.html">首页</a></li>
+                            <li><a title="订阅" href="order.html">订阅</a></li>
+                            <!--  <li><a title="加入收藏" onClick="AddFavorite(window.location, document.title)" href="#">分类</a></li>-->
+                            <li><a title="下载到桌面" href="/family_control-download_to_desktop.html" target="_blank">客户端</a></li>
+                        </ul>
+                        <form class="navbar-search pull-right">
+                            <input type="text" class="search-query" placeholder="Search">
+                        </form>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+        <!--navbar End-->
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span3">
+
+                    <!--login form-->
+                    <div class="well sidebar-nav" style="padding-bottom:5px">
+                        <div > 个人信息</div>
+                        <div class="thumbnail">
+                            <img alt="100x100" data-src="holder.js/100x100" style="width:164px;height: 130px;" src="../upload/1.jpg">
+                            <div class="caption">
+                                <strong style="color:#825d5b">天学者</strong>
+                                <p style="color:#afafaf;font-size: 12px">晓英视<br>
+                                    <span style="color:red;font-size: 12px">更新至22章</span></p>
+                            </div>
+
+                        </div>
+                        <ul class="nav nav-tabs nav-stacked">
+                            <li class="active"><a href="post.html"><i class="icon-th-list"></i> 作品</a></li>
+                            <li class=""><a href="subscribe.html"><i class="icon-star"></i> 订阅</a></li>
+                            <li class=""><a href="myfocus.html"><i class="icon-bookmark"></i> 关注</a></li>
+                            <li><a href="email.html"><i class="icon-envelope"> </i> 私信</a></li>
+                            <li><a href="personcenter.html"><i class="icon-user"></i> 个人中心</a></li>
+                        </ul>
+
+                    </div>
+                    <!--/.well -->
+                    <!--login form End-->
+
+                </div>
+                <!--/span-->
+                <div class="span9">
+                    <div class="row-fluid">
+
+                        <div class="page-header">
+                            <h4>个人中心</h4>
+                            <div class="tab_menu">
+                                <ul class="nav nav-tabs">
+                                    <li class="active" class="selected2">
+                                        <a href="#">基本资料</a>
+                                    </li>
+                                    <li><a href="#">扩展资料</a></li>
+                                    <li><a href="#">修改用户名</a></li> 
+                                    <li><a href="#">修改密码</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="tab_box">
+                            <div style="position:absolute;left:362px;top:195px">
+                                <form action="method" method="POST">
+                                    <table>
+                                        <tr>
+                                            <td>会员昵称：</td><td>小林</td>
+                                        </tr>
+                                        <tr>
+                                            <td>会员密码：</td><td>xiaolin</td>
+                                        </tr>
+                                        <tr>
+                                            <td>会员图像:</td>
+                                            <td><input type="text" style="width:115px;height:14px;font-size:9pt"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>性别:</td>
+                                            <td><label><input type="radio" name="gender">男<input type="radio" name="gender">女</label></td>
+                                        </tr>
+                                        <tr>
+                                            <td>QQ号:</td>
+                                            <td><input type="text" style="width:115px;height:14px;font-size:9pt"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>手机号码:</td>
+                                            <td><input type="text" style="width:115px;height:14px;font-size:9pt"></td>
+                                        </tr>
+
+                                    </table>
+
+                                    <a  class="btn btn-info" href="release.html">确定保存</a>
+                                </form>	
+
+                            </div>
+
+                            <div style="position:absolute;left:362px;top:195px" class="xuan">
+                                下面可选资料让跟多会员了解您！<br><br>
+                                <form action="method" method="POST">
+                                    <table>
+                                        <tr>
+                                            <td>出生年月：</td>
+                                            <td>
+                                                <input type="text" style="width:50px;height:14px;font-size:9pt"> 年
+                                                <input type="text" style="width:50px;height:14px;font-size:9pt"> 月
+                                                <input type="text" style="width:50px;height:14px;font-size:9pt"> 日
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>所在地区：</td>
+                                            <td><select style="width:115px;height:25px;font-size:9pt">
+                                                    <option selected >--请选择省份--</option>
+                                                    <option>广东</option>
+                                                    <option>河南</option>
+                                                </select>
+                                                <select style="width:115px;height:25px;font-size:9pt">
+                                                    <option selected>--请选择地区--</option>
+                                                    <option>深圳</option> 
+                                                    <option>广州</option>
+                                                </select></td>
+                                        </tr>
+                                        <tr>
+                                            <td>你的血型:</td>
+                                            <td><select style="width:65px;height:25px;font-size:9pt">
+                                                    <option selected>A</option>
+                                                    <option>B</option>
+                                                    <option>O</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>最高学历:</td>
+                                            <td><label><select style="width:85px;height:25px;font-size:9pt">
+                                                        <option>--未选择--</option>
+                                                        <option>大专</option>
+                                                        <option>本科</option>
+                                                        <option>硕士</option>
+                                                        <option>博士</option>
+                                                    </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>婚姻状况:</td>
+                                            <td>
+                                                <select style="width:85px;height:25px;font-size:9pt" name="marrage" >                                                    <option>单身</option>
+                                                    <option>恋爱中</option>
+                                                    <option>离异</option>
+                                                    <option>已婚</option>
+                                                    <option>丧偶</option></select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>自我描述:</td>
+                                            <td><textarea cols=50 rows=5></textarea></td>
+                                        </tr>
+
+                                    </table>
+                                    <a  class="btn btn-info" href="release.html">确定保存</a>
+                                </form>	
+
+                            </div>
+
+                            <div style="position:absolute;left:362px;top:195px" class="xuan">
+                                <form>
+                                    <table>
+                                        <tr>
+                                            <td>原始用户名 :</td>
+                                            <td><input type="text" style="width:160px;height:15px"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>新用户名:</td>
+                                            <td><input type="text" style="width:160px;height:15px"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>确认用户名:</td>
+                                            <td><input type="text" style="width:160px;height:15px"></td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </div>
+
+                            <div style="position:absolute;left:362px;top:195px" class="xuan">
+                                <form>
+                                    <table>
+                                        <tr>
+                                            <td>原始密码:</td>
+                                            <td><input type="text" style="width:160px;height:15px"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>新密码:</td>
+                                            <td><input type="password" style="width:160px;height:15px"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>确认密码:</td>
+                                            <td><input type="password" style="width:160px;height:15px"></td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <hr><!--/.fluid-container-->
+            <footer>
+                <p align="center">Copyright &copy; 2012-2013&nbsp;&nbsp;文兴资讯</p>
+            </footer>
+
+
+    </body>
+</html>
