@@ -24,6 +24,8 @@
             input{
                 width: 90%;
             }
+
+            .tdl{text-align: justify; width: 15%;}
         </style>
 
 </head>
@@ -102,58 +104,112 @@
 		<!--/span-->
 		<div class="span10">
 			<div class="row-fluid">
-				<ul class="breadcrumb">
-					<li>
-						<a href="#">首页</a>
-						<span class="divider">/</span>
-					</li>
-					<li>
-						<a href="#">国学</a>
-						<span class="divider">/</span>
-					</li>
-					<li class="active">列表</li>
-				</ul>
+				<!--<div class="page-header"> <strong>系统信息</strong>
 			</div>
-			<table class="table table-striped">
-				<thead>
-					<tr>
-						<th>序号</th>
-						<th>作品</th>
-						<th>发布时间</th>
-						<th>点击</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>1</td>
-						<td>天学者</td>
-						<td>2013-06025</td>
-						<td>1000</td>
-					</tr>
+			-->
+			<ul class="breadcrumb">
+				<li>
+					<a href="#">首页</a>
+					<span class="divider">/</span>
+				</li>
+				<li>
+					<a href="#">系统设置</a>
+					<span class="divider">/</span>
+				</li>
 
-					<tr>
-						<td>1</td>
-						<td>天学者(第二部)</td>
-						<td>2013-06025</td>
-						<td>1000</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>天学者（第三部）</td>
-						<td>2013-06025</td>
-						<td>1000</td>
-					</tr>
-				</tbody>
-			</table>
-
+			</ul>
 		</div>
-	</div>
+
+		<!--<fieldset>
+		<legend>系统参数</legend>
+		<label>网站名称</label>
+		<input type="text" class="span3">
+		<span class="help-block ">请输入网站名称</span>
+		<label class="checkbox">
+			<input type="checkbox">选择</label>
+		<button type="submit" class="btn">Submit</button>
+	</fieldset>
+	-->
+	<form class="form-horizontal">
+		<div class="control-group">
+			<label class="control-label" for="inputEmail">网站名称</label>
+			<div class="controls">
+				<input type="text" class="span3" id="inputEmail" placeholder="Email"></div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="inputPassword">网站域名</label>
+			<div class="controls">
+				<input type="password" class="span3" id="inputPassword" placeholder="域名"></div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="inputPassword">备案信息</label>
+			<div class="controls">
+				<input type="password" class="span3" id="inputPassword" placeholder="域名"></div>
+		</div>
+		<div class="control-group">
+			<div class="controls">
+				<label class="checkbox">
+					<input type="checkbox">记住</label>
+				<button type="submit" class="btn">提 交</button>
+			</div>
+		</div>
+	</form>
+
+	<table class="table">
+		<tr>
+			<td  class="tdl">网站名称</td>
+			<td class="text-left"><input type="text" class="span4"/></td>
+		</tr>
+		<tr>
+			<td  class="tdl">MYSQL版本</td>
+			<td class="text-left"><input type="text" class="span4" /></td>
+		</tr>
+		<tr>
+			<td  class="tdl">PHP VERSION</td>
+			<td class="text-left"><input type="text" class="span3"/></td>
+		</tr>
+		<tr>
+			<td  class="tdl">是否支持上传</td>
+			<td class="text-left"><input type="text" class="span4"/></td>
+		</tr>
+		<tr>
+			<td  class="tdl">最新版本</td>
+			<td class="text-left">centos 6.3.2</td>
+		</tr>
+		<tr>
+			<td  class="tdl">操作系统</td>
+			<td class="text-left">centos 6.3.2</td>
+		</tr>
+		<tr>
+			<td  class="tdl">操作系统</td>
+			<td class="text-left">centos 6.3.2</td>
+		</tr>
+		<tr>
+			<td  class="tdl">操作系统</td>
+			<td class="text-left">centos 6.3.2</td>
+		</tr>
+		<tr>
+			<td  class="tdl">操作系统</td>
+			<td class="text-left">centos 6.3.2</td>
+		</tr>
+		<tr>
+			<td  class="tdl">操作系统</td>
+			<td class="text-left">centos 6.3.2</td>
+		</tr>
+		<tr>
+			<td  class="tdl">操作系统</td>
+			<td class="text-left">centos 6.3.2</td>
+		</tr>
+	</table>
+
+</div>
+</div>
 
 </div>
 <hr>
 <!--/.fluid-container-->
 <footer>
-	<p align="center">Copyright &copy; 2012-2013&nbsp;&nbsp;文兴资讯</p>
+<p align="center">Copyright &copy; 2012-2013&nbsp;&nbsp;文兴资讯</p>
 </footer>
 
 </body>
